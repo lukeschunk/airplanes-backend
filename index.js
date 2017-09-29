@@ -19,8 +19,12 @@ app.use( cors() );
 
 app.get('/api/planes', controller.getPlanes)
 app.post('/api/planes', controller.addPlane)
+<<<<<<< HEAD
 app.get('/api/hangliders', controller.whatever)
 app.get('/api/tank', controller.getTanks)
+=======
+app.get('/api/hangliders', controller.getGliders)
+>>>>>>> master
 
 
 const port = process.env.PORT || 3000
