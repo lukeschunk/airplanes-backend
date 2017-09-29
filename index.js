@@ -17,9 +17,10 @@ massive(process.env.CONNECTION_STRING).then(dbInstance => {
 app.use( bodyParser.json() );
 app.use( cors() );
 
-
 app.get('/api/planes', controller.getPlanes)
 app.post('/api/planes', controller.addPlane)
+
+app.get('/api/tank', controller.getTanks)
 
 
 const port = process.env.PORT || 3000
