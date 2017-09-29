@@ -19,7 +19,7 @@ app.use( cors() );
 
 app.get('/api/planes', controller.getPlanes)
 app.post('/api/planes', controller.addPlane)
-
+app.get('/api/hangliders', controller.whatever)
 app.get('/api/tank', controller.getTanks)
 
 
